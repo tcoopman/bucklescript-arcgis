@@ -1,0 +1,26 @@
+{
+  "name": "bucklescript-arcgis",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean",
+    "clean:all": "bsb -clean-world",
+    "build:bsb": "bsb -make-world",
+    "build:js": "webpack --config webpack.config.js",
+    "serve": "serve release",
+    "build": "run-s build:bsb build:js",
+    "watch:bsb": "bsb -make-world -w",
+    "watch:js": "webpack --progress --colors --watch --config webpack.config.js",
+    "watch": "run-p watch:bsb watch:js serve"
+  },
+  "keywords": [
+    "Bucklescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^1.9.2",
+    "npm-run-all": "^4.1.0",
+    "serve": "^6.0.6",
+    "bs-loader": "^1.7.1",
+    "webpack": "^3.6.0"
+  }
+}
