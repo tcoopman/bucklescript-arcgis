@@ -6,7 +6,7 @@
     "clean:all": "bsb -clean-world",
     "build:bsb": "bsb -make-world",
     "build:js": "webpack --config webpack.config.js",
-    "serve": "serve release",
+    "serve": "serve",
     "build": "run-s build:bsb build:js",
     "watch:bsb": "bsb -make-world -w",
     "watch:js": "webpack --progress --colors --watch --config webpack.config.js",

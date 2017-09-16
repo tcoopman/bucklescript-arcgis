@@ -4,6 +4,6 @@
   "sources": [
     "src"
   ],
-  "package-specs": ["es6"],
+  "package-specs": ["es6", "amdjs"],
   "bsc-flags": [ "-bs-super-errors -no-alias-deps", "-color", "always", "-w", "-40+6+7+27+32..39+44+45", "-w @8"]
 }
